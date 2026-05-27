@@ -14,7 +14,15 @@ process.on("unhandledRejection", (reason) => {
 const app = express();
 const PORT = process.env.PORT ?? 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://deep-research-ai-iota.vercel.app/",  // add after you get the Vercel URL
+    /\.vercel\.app$/,               // allows all vercel preview URLs
+  ],
+  credentials: true,
+}));
+
 app.use(express.json());
 
 // Health check
