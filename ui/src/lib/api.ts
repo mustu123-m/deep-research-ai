@@ -1,7 +1,7 @@
 import { supabase } from "./supabase";
 import type { HistoryRun, Report } from "@/types";
 
-const BASE = "/api/research";
+const BASE = "https://deep-research-ai-qmln.onrender.com/api/research";
 
 /**
  * Get the JWT token from the current Supabase session.
