@@ -1,0 +1,44 @@
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+ui/node_modules/
+
+# ── Environment variables ─────────────────────────────────────
+# Never commit these — contain API keys
+.env
+.env.local
+.env.production
+ui/.env
+ui/.env.local
+ui/.env.production
+
+# ── Build outputs ─────────────────────────────────────────────
+dist/
+ui/dist/
+build/
+
+# ── TypeScript ────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Research outputs ──────────────────────────────────────────
+# Generated report files — too large and not useful in git
+outputs/
+
+# ── Logs ──────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── OS files ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── LangSmith / LangChain cache ───────────────────────────────
+.langchain/
+.cache/

@@ -1,0 +1,32 @@
+.state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-3);
+  font-size: 14px;
+}
+
+.error {
+  background: var(--red-dim);
+  border: 1px solid rgba(255,95,95,0.2);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--red);
+  font-family: var(--font-mono);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--text-3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.back:hover { color: var(--text); }
