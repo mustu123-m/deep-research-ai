@@ -13,7 +13,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "http://localhost:3001",
+        target: "https://deep-research-ai-qmln.onrender.com",
         changeOrigin: true,
       },
     },
